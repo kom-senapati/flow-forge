@@ -1,28 +1,28 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 const items = [
   {
-    question: "What payment methods do you accept?",
+    question: "What is Flow Forge?",
     answer:
-      "We accept all major credit cards, PayPal, and various other payment methods depending on your location. Please contact our support team for more information on accepted payment methods in your region.",
+      "Flow Forge is a GitHub workflow manager that simplifies project management by integrating with tools like Kestra for workflow management and leveraging AI for automation. It enables you to automate tasks like issue creation, pull request reviews, and notifications.",
   },
   {
-    question: "How does the pricing work for teams?",
+    question: "How does Kestra enhance workflow management in Flow Forge?",
     answer:
-      "Our pricing is per user, per month. This means you only pay for the number of team members you have on your account. Discounts are available for larger teams and annual subscriptions.",
+      "Kestra acts as the backbone of workflow orchestration in Flow Forge. It allows you to define, monitor, and optimize complex workflows, ensuring seamless integration with your repositories and team processes.",
   },
   {
-    question: "Can I change my plan later?",
+    question: "What AI-powered features does Flow Forge offer?",
     answer:
-      "Yes, you can upgrade or downgrade your plan at any time. Changes to your plan will be prorated and reflected in your next billing cycle.",
+      "Flow Forge uses AI to automate repetitive tasks, analyze pull requests for improvements, and suggest optimized workflows based on your project data. This helps teams save time and improve efficiency.",
   },
   {
-    question: "Is my data secure?",
+    question: "Can I customize the workflow templates?",
     answer:
-      "Security is our top priority. We use state-of-the-art encryption and comply with the best industry practices to ensure that your data is stored securely and accessed only by authorized users.",
+      "Yes, Flow Forge supports fully customizable templates for issues, pull requests, and notifications, giving your team the flexibility to adapt workflows to specific needs.",
   },
 ];
 
