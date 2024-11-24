@@ -1,11 +1,11 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 
 const logos = [
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716817722/Amazon_icon.svg_a4qmtg.png",
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716800282/Apple_logo_black.svg_seeetv.png",
-  "https://res.cloudinary.com/dl2adjye7/image/upload/v1716800359/WISE.L-b3d3de3c_rexehe.png",
+  "https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png", // Discord
+  "/github-mark.png", // GitHub
+  "https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg", // Slack
 ];
 
 const lineWidth = 80;
@@ -146,46 +146,8 @@ const AWSIcon = () => {
       <div className="flex flex-row gap-8 justify-center h-full items-center relative">
         <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
           <img
-            src={logos[0]}
-            alt="Logo 2"
-            className="filter invert brightness-0"
-          />
-          <motion.div
-            className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
-            initial={{ x: "-100%" }}
-            animate={{ x: "100%" }}
-            transition={{
-              duration: 2,
-              ease: "linear",
-              repeat: Infinity,
-              repeatType: "loop",
-            }}
-            style={{ willChange: "transform" }}
-          />
-        </div>
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img
-            src={logos[1]}
-            alt="Logo 2"
-            className="filter invert brightness-0"
-          />
-          <motion.div
-            className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent opacity-30"
-            initial={{ x: "-100%" }}
-            animate={{ x: "100%" }}
-            transition={{
-              duration: 2,
-              ease: "linear",
-              repeat: Infinity,
-              repeatType: "loop",
-            }}
-            style={{ willChange: "transform" }}
-          />
-        </div>
-        <div className="relative bg-black border-2 border-white/70 rounded-2xl flex items-center justify-center w-16 h-16 p-4 overflow-hidden shadow-[0_0_15px_5px_#dbe0e2]">
-          <img
-            src={logos[2]}
-            alt="Logo 2"
+            src={"https://cdn-icons-png.flaticon.com/512/1250/1250615.png"}
+            alt="GitHub"
             className="filter invert brightness-0"
           />
           <motion.div
@@ -204,9 +166,9 @@ const AWSIcon = () => {
       </div>
 
       <div className="text-left p-6 mt-4">
-        <h1 className="text-white text-2xl font-bold mb-2">AWS Integration</h1>
+        <h1 className="text-white text-2xl font-bold mb-2">Template Power</h1>
         <p className="text-gray-400 text-lg">
-          integrate AWS and use seamlessly with us.
+          Create and manage custom issue <span className="text-purple-500">templates</span> to standardize your workflow and boost team productivity.
         </p>
       </div>
     </div>
@@ -250,10 +212,10 @@ const BentoBox1 = () => {
           <div className="flex flex-col justify-between h-full">
             <div className="mb-4 px-6 mt-6">
               <div className="flex justify-between items-center mb-6 pb-2">
-                <h2 className="text-white/70 text-xl">Sales Data</h2>
+                <h2 className="text-white/70 text-xl">GitHub Activity</h2>
                 <div className="flex items-center">
                   <div className="h-1 bg-black w-8 rounded-lg"></div>
-                  <span className="ml-2 text-white/70 text-sm">Growth</span>
+                  <span className="ml-2 text-white/70 text-sm">Automation</span>
                 </div>
               </div>
               <div
@@ -321,11 +283,10 @@ const BentoBox1 = () => {
             </div>
             <div className="text-left p-6 mt-4">
               <h1 className="text-white text-2xl font-bold mb-2">
-                Incredible Growth
+              Automated Workflow
               </h1>
               <p className="text-white/70 text-lg">
-                Fly through your tasks with rapid-fire keyboard shortcuts for
-                everything. Literally everything.
+              Track your <span className="text-purple-500">team</span>'s productivity with automated PR reviews, issue management, and real-time performance metrics.
               </p>
             </div>
           </div>
@@ -336,11 +297,10 @@ const BentoBox1 = () => {
               <LogoBeam />
               <div className="text-left p-6">
                 <h1 className="text-white text-2xl font-bold mb-2">
-                  Multiple Technologies
+                Seamless Integration
                 </h1>
                 <p className="text-white/70 text-lg">
-                  Fly through your tasks with rapid-fire keyboard shortcuts for
-                  everything. Literally everything.
+                Connect GitHub and Discord seamlessly using <span className="text-purple-500">Kestra</span> for workflow orchestration.
                 </p>
               </div>
             </div>
