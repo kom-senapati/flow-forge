@@ -1,8 +1,9 @@
 "use client";
-import appScreen from "../../assets/images/product.avif";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
+import Image from "next/image";
+import { useRef } from "react";
+import appScreen from "../../assets/images/product.avif";
+
 export const ProductShowcase = () => {
   const appImage = useRef<HTMLImageElement>(null);
   const { scrollYProgress } = useScroll({
@@ -16,12 +17,13 @@ export const ProductShowcase = () => {
   return (
     <div className="bg-black text-white bg-gradient-to-b from-black to-[#5D2CA8] py-[72px] sm:py-24">
       <h2 className="text-center text-5xl font-bold tracking-tighter">
-        Intituve interface
+        Command Your Workflow
       </h2>
       <div className="max-w-xl mx-auto">
-        <p className="text-xl text-white/70 text-center mt-5 ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          minima odio ea debitis quisquam nobis. Eius fugit ut dolorem delectus.
+        <p className="text-xl text-white/70 text-center mt-5">
+          A powerful dashboard that puts GitHub automation at your fingertips. Create
+          issues from templates, manage PRs, and get Discord notifications - all from
+          one intuitive interface.
         </p>
       </div>
       <div className="flex justify-center">
@@ -35,7 +37,7 @@ export const ProductShowcase = () => {
           <Image
             src={appScreen}
             ref={appImage}
-            alt="app screen"
+            alt="FlowForge dashboard interface"
             className="mt-14"
           />
         </motion.div>

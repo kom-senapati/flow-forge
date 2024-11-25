@@ -1,12 +1,6 @@
 "use client";
 
 import { DashboardSidebar } from "@/components/dashboard-sidebar";
-import { Separator } from "@/components/ui/separator";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,8 +9,13 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Separator } from "@/components/ui/separator";
+import {
+  SidebarInset,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
 import { usePathname } from "next/navigation";
-import { ModeToggle } from "@/components/theme/theme-toggle";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = usePathname();
@@ -63,7 +62,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </BreadcrumbList>
             </Breadcrumb>
           </div>
-          <ModeToggle />
         </header>
         {children}
       </SidebarInset>
